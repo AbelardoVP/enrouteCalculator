@@ -7,9 +7,10 @@
 npm install
 ```
 
-3. Open app folder and follow the README instructions.
-4. Open server folder and follow the README instructions.
-5. **Run the Project** : You have the following scripts available in the `package.json` file:
+3. Be sure that you have mongodb installed in your local machine.
+4. Open app folder and follow the README instructions.
+5. Open server folder and follow the README instructions.
+6. **Run the Project** : You have the following scripts available in the `package.json` file:
 
 - To start only the frontend development server:npm run start:frontend
   ```

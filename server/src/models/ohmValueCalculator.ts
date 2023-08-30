@@ -57,23 +57,16 @@ class OhmValueCalculator implements IOhmValueCalculator {
     const bandCValue = this.multipliers[bandCColor]
     const tolerance = this.tolerances[bandDColor] || 0.2
 
-    console.log('bandAValue===', bandAValue)
-    console.log('bandBValue===', bandBValue)
-    console.log('bandCValue===', bandCValue)
-    console.log('tolerance===', tolerance)
 
     const value = (bandAValue * 10 + bandBValue) * bandCValue
 
     if (tolerance >= 0.05) {
-      console.log('if return', value)
+     
       return value
     }
 
     const lowerBound = Math.round(value * (1 - tolerance))
     const upperBound = Math.round(value * (1 + tolerance))
-    console.log('lowerBound===', lowerBound)
-    console.log('upperBound===', upperBound)
-    console.log('result===', Math.floor((lowerBound + upperBound) / 2))
     return Math.floor((lowerBound + upperBound) / 2)
   }
 }

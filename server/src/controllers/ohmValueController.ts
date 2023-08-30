@@ -6,7 +6,7 @@ import {
   OhmValueCalculator
 } from '../models/ohmValueCalculator.ts'
 
-// check if we create a single instance of the calculator
+
 const ohmValueCalculator = new OhmValueCalculator()
 
 interface CalculateOhmValueRequest
