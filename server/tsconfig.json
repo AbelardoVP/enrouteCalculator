@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "es2020",
+        "outDir": "./dist", // Carpeta donde se colocarán los archivos transpilados
+        "rootDir": "./src", // Carpeta donde están tus archivos TypeScript
+        "strict": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "allowImportingTsExtensions": true,
+        "noEmit": true
+    },
+    "include": [
+        "src/**/*.ts"
+    ]
+}

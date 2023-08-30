@@ -1,0 +1,17 @@
+{
+  "name": "electroniccalculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:frontend": "cd app && npm run dev",
+    "start:backend": "cd server && npm run start",
+    "start:dev": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.1",
+    "concurrently": "^6.2.2"
+  },
+  "author": "Abelardo Valdez",
+  "license": "ISC"
+}
